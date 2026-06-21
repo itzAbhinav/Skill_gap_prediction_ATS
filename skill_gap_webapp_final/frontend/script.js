@@ -6,7 +6,7 @@
 // Set this to your deployed Render backend URL once you have it,
 // e.g. "https://skill-gap-scanner-backend.onrender.com"
 // Leave as-is to keep testing against your local Flask server.
-const API_BASE_URL = "http://127.0.0.1:5000";
+const API_BASE_URL = "https://skill-gap-prediction-ats.onrender.com";
 
 const resumeInput = document.getElementById("resumeInput");
 const dropzone = document.getElementById("dropzone");
