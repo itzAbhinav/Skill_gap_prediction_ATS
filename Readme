@@ -1,0 +1,72 @@
+# 🚀 Skill Gap Scanner & ATS Resume Analyzer
+
+> Upload your resume, paste a job description, and instantly discover missing skills, ATS compatibility, and actionable improvements.
+
+🌐 **Live Demo:** https://skill-gap-scanner-ats.vercel.app/
+
+---
+
+## 📌 Overview
+
+Skill Gap Scanner is an AI-powered web application that analyzes a candidate's resume against a job description and identifies:
+
+- ✅ ATS Match Score
+- ✅ Matching Skills
+- ✅ Missing Skills
+- ✅ Skill Gap Analysis
+- ✅ Resume Improvement Suggestions
+- ✅ Recruiter-Friendly Keyword Insights
+
+The application helps job seekers optimize their resumes for Applicant Tracking Systems (ATS) and improve their chances of getting shortlisted.
+
+---
+
+## ✨ Features
+
+### 📄 Resume Parsing
+- Supports PDF resumes
+- Supports DOCX resumes
+- Automatic text extraction
+
+### 🎯 ATS Score Calculation
+- Calculates keyword overlap between resume and job description
+- Generates a transparent ATS compatibility score
+- Provides match quality indicators
+
+### 🔍 Skill Gap Detection
+- Detects skills present in the resume
+- Extracts required skills from the job description
+- Highlights missing competencies
+
+### 💡 Smart Recommendations
+- Generates actionable suggestions for every missing skill
+- Helps users tailor resumes for specific roles
+
+### ⚡ Fast & User-Friendly
+- Modern responsive UI
+- Instant analysis
+- Simple drag-and-upload workflow
+
+---
+
+## 🏗️ System Architecture
+
+```text
+User Uploads Resume + Job Description
+                │
+                ▼
+      Flask Backend API
+                │
+ ┌──────────────┼──────────────┐
+ │              │              │
+ ▼              ▼              ▼
+Resume      Skill         ATS Score
+Parser     Extraction     Calculation
+ │              │              │
+ └──────────────┼──────────────┘
+                ▼
+       Gap Analysis Engine
+                ▼
+         JSON Response
+                ▼
+         Frontend UI 
